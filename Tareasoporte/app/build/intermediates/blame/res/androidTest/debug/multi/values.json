@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "C:\\Users\\azaa0\\Documents\\GitHub\\ProgMovil1\\Tareasoporte\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 45,
+                    "endOffset": 96
+                },
+                "from": {
+                    "file": "C:\\Users\\azaa0\\.android\\build-cache\\fdd0ec9ffcbdbd5a0bf4ea283dcde8a1f293e65f\\output\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 229,
+                        "endColumn": 45,
+                        "endOffset": 270
+                    }
+                }
+            }
+        ]
+    }
+]

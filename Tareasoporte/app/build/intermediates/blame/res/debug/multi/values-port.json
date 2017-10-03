@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "C:\\Users\\azaa0\\Documents\\GitHub\\ProgMovil1\\Tareasoporte\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 55,
+                    "endOffset": 106
+                },
+                "from": {
+                    "file": "C:\\Users\\azaa0\\.android\\build-cache\\280f8594603b1e7c89afa7d8f475b16da45973b6\\output\\res\\values-port\\values-port.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 55,
+                        "endOffset": 106
+                    }
+                }
+            }
+        ]
+    }
+]
