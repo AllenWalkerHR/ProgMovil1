@@ -12,10 +12,12 @@
  */
 
 package com.example.azaa0.aplicacionpermisos;
+import android.Manifest;
 import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.ContentUris;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -23,6 +25,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.provider.ContactsContract.Contacts;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.telephony.SmsManager;
 import android.view.View;
 import android.widget.ImageView;
@@ -36,7 +40,7 @@ import android.provider.ContactsContract.CommonDataKinds.Phone;
 
 
 public class Main extends Activity {
-
+    private final int  PERMISSIONS =1 ;
     /*
     Código del mensaje de envío y
     Uri de contenido global
@@ -48,6 +52,7 @@ public class Main extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+        checkPermission();
     }
 
 
@@ -158,6 +163,17 @@ public class Main extends Activity {
 
         return name;
     }
+    private void checkPermission() {
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_CONTACTS)!=
+                PackageManager.PERMISSION_GRANTED){
+            if (ActivityCompat.shouldShowRequestPermissionRationale(this,
+                    Manifest.permission.WRITE_EXTERNAL_STORAGE)){
 
+            }else{
+                ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.READ_CONTACTS},
+                        PERMISSIONS);
+            }
+        }
+    }
 
 }
